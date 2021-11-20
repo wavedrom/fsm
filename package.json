@@ -1,0 +1,33 @@
+{
+  "name": "fsm",
+  "version": "0.1.0",
+  "description": "Finite State Machine renderer",
+  "author": "Aliaksei Chapyzhenka",
+  "license": "MIT",
+  "homepage": "https://github.com/wavedrom/fsm#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wavedrom/fsm.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/wavedrom/fsm/issues"
+  },
+  "main": "lib",
+  "scripts": {
+    "test": "eslint lib test",
+    "unpkg": "browserify --standalone fsm lib/index.js > build/fsm.js",
+    "prepare": "npm run test && mkdir -p build && npm run unpkg"
+  },
+  "devDependencies": {
+    "@drom/eslint-config": "^0.10.0",
+    "browserify": "^17.0.0",
+    "chai": "^4.1.2",
+    "eslint": "^7.21.0",
+    "mocha": "^8.3.0",
+    "nyc": "^15.1.0"
+  },
+  "eslintConfig": {
+    "extends": "@drom/eslint-config/eslint4/node8"
+  }
+}
