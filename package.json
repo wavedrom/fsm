@@ -1,6 +1,6 @@
 {
   "name": "@wavedrom/fsm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Finite State Machine renderer",
   "author": "Aliaksei Chapyzhenka",
   "license": "MIT",
@@ -27,8 +27,7 @@
   "engines": {
     "node": ">=12"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@drom/eslint-config": "^0.10.0",
     "browserify": "^17.0.0",
