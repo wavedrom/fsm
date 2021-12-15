@@ -17,6 +17,7 @@ const testo = {
     }),
     dot: (`\
 digraph g {
+node [ style=rounded ]
 foo [ shape=rect ]
 bar [ shape=rect ]
 foo -> bar [label="1"]
@@ -24,6 +25,7 @@ bar -> foo [label="1"]
 }`
     ),
     verilog: (`\
+// ***** THIS TEXT IS AUTOMATICALY GENERATED, DO NOT EDIT *****
 reg [0:0] FSM_state, FSM_next;
 
 
@@ -55,7 +57,8 @@ end
 always @(posedge clock or negedge reset_n)
   if (~reset_n) FSM_state <= FSM_foo;
   else          FSM_state <= FSM_next;
-`
+
+// ***** END OF AUTOMATICALY GENERATED TEXT, DO NOT EDIT *****`
     )
   }
 };
