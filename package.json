@@ -1,6 +1,6 @@
 {
   "name": "@wavedrom/fsm",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Finite State Machine renderer",
   "author": "Aliaksei Chapyzhenka",
   "license": "MIT",
