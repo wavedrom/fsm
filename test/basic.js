@@ -17,9 +17,9 @@ const testo = {
     }),
     dot: (`\
 digraph g {
-node [ style=rounded ]
-foo [ shape=rect ]
-bar [ shape=rect ]
+node [ style=rounded; shape=rect ]
+foo [  ]
+bar [  ]
 foo -> bar [label="1"]
 bar -> foo [label="1"]
 }`
