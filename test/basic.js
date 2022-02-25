@@ -37,9 +37,9 @@ wire [0:0] FSM_bar = 1;
 wire FSM_foo_bar = ((FSM_state == FSM_foo) & (1));
 wire FSM_bar_foo = ((FSM_state == FSM_bar) & (1));
 
-// FSM state enter conditions
-wire FSM_bar_onEnter = (FSM_foo_bar);
-wire FSM_foo_onEnter = (FSM_bar_foo);
+// FSM state entry conditions
+wire FSM_bar_onEntry = (FSM_foo_bar);
+wire FSM_foo_onEntry = (FSM_bar_foo);
 // FSM state exit conditions
 wire FSM_foo_onExit  = (FSM_foo_bar);
 wire FSM_bar_onExit  = (FSM_bar_foo);
