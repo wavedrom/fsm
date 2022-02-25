@@ -40,9 +40,14 @@ wire FSM_bar_foo = ((FSM_state == FSM_bar) & (1));
 // FSM state entry conditions
 wire FSM_bar_onEntry = (FSM_foo_bar);
 wire FSM_foo_onEntry = (FSM_bar_foo);
+
 // FSM state exit conditions
 wire FSM_foo_onExit  = (FSM_foo_bar);
 wire FSM_bar_onExit  = (FSM_bar_foo);
+
+// FSM state self conditions
+wire FSM_foo_onSelf  = (FSM_state == FSM_foo) & ~FSM_foo_onExit;
+wire FSM_bar_onSelf  = (FSM_state == FSM_bar) & ~FSM_bar_onExit;
 
 // FSM next state select
 always @(*) begin : FSM_next_select
